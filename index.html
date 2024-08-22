@@ -18,7 +18,7 @@
         font-family: "Manrope", sans-serif;
       }
       .bg-paper {
-        background-image: url(../assets/bg.jpg);
+        background-image: url(assets/bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -117,23 +117,23 @@
       </header>
 
       <!-- hero section  -->
-      <section class="container mx-auto flex flex-col items-center my-12 gap-6">
-        <img src="assets/banner.png" alt="banner" />
+      <section class="container w-[94%] mx-auto flex flex-col items-center my-12 gap-6">
+        <img class="w-9/12 md:w-auto" src="assets/banner.png" alt="banner" />
         <h1
-          class="md:text-6xl text-3xl font-extrabold text-center max-w-[1000px] w-[90%]"
+          class="md:text-6xl text-4xl font-extrabold text-center max-w-[1000px] w-[85%]"
         >
           A barn house of this design has a striking appearance
         </h1>
-        <p class="text-base max-w-[1000px] w-[80%] text-center">
+        <p class="text-base max-w-[1000px] w-[95%] text-center">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
         </p>
-        <button class="bg-[#ABEF5F80] btn rounded-3xl w-11/12 md:w-44">
+        <button class="bg-[#ABEF5F80] btn rounded-3xl w-11/12 md:w-60">
           <a
             class="font-extrabold flex items-center justify-center md:justify-between gap-3"
           >
-            <h1>View Details</h1>
+            <h1 class="text-xl font-bold">View Details</h1>
             <i
               class="fa-solid fa-arrow-right text-xl -rotate-45 size-10 rounded-full bg-[#ABEF5F] text-gray-950 flex items-center justify-center"
             ></i>
@@ -148,7 +148,7 @@
         <!-- we desing  -->
         <section>
           <div
-            class="container w-[94%] grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto  md:py-24"
+            class="container w-[94%] grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:py-24"
           >
             <!-- textpart -->
             <div class="relative space-y-4">
@@ -157,20 +157,20 @@
                 src="assets/Vector.png"
                 alt="arrow"
               />
-              <button class="btn py-2 px-6 rounded-3xl font-extrabold bg-white">
+              <button class="btn py-2 px-6 rounded-3xl font-extrabold bg-white text-center md:text-left">
                 <i class="fa-solid fa-arrow-right"></i> About Us
               </button>
-              <h1 class="font-extrabold text-4xl md:text-5xl">
+              <h1 class="font-extrabold text-4xl md:text-5xl text-center md:text-left">
                 We design thoughtful, liveable spaces
               </h1>
-              <p>
+              <p class="text-center md:text-left">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
               </p>
               <!-- card 1 -->
               <div class="flex gap-4 py-7 px-8 bg-white rounded-xl">
-                <div class="flex items-center">
+                <div class="flex items-start md:items-center">
                   <img src="assets/commercial.png" alt="commercial" />
                 </div>
                 <div class="grid gap-4">
@@ -402,6 +402,21 @@
                 />
               </div>
             </div>
+
+                        <!-- card 6 -->
+            <div
+              class="md:hidden order-6 col-span-1 grid gap-4 py-7 px-8 rounded-xl border-2 border-solid border-gray-200"
+            >
+              <div
+                class="flex items-center border-2 border-dashed border-gray-400"
+              >
+                <img
+                  class="w-full h-ful"
+                  src="assets/img5.png"
+                  alt="commercial"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -468,6 +483,42 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-gray-950 flex items-center justify-center">
+      <section
+        class="w-[94%] md:w7/12 mx-auto flex flex-col items-center justify-center gap-10 py-24"
+      >
+        <a class="btn btn-ghost text-xl">
+          <div
+            class="size-10 flex justify-center items-center rounded-full bg-[#ABEF5F]"
+          >
+            <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+          </div>
+          <h1 class="text-4xl font-extrabold text-white">Rinterio</h1>
+        </a>
+
+        <p class="text-base text-gray-500 max-w-[1000px] w-[80%] text-center">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+
+        <ul
+          class="flex flex-col md:flex-row gap-12 md:gap-20  text-center  rounded-box text-base text-gray-400 font-extrabold"
+        >
+          <li>Home</li>
+          <li >Services</li>
+          <li >Portfolio</li>
+          <li >Blogs</li>
+          <li >Contact Us</li>
+        </ul>
+
+        <a class="btn bg-[#ABEF5F] w-full md:w-60 rounded-3xl font-extrabold">
+          <h1 class="font-extrabold text-xl">Book Consult</h1>
+          <i
+            class="fa-solid fa-arrow-right text-xl -rotate-45 size-10 rounded-full bg-gray-950 text-white flex items-center justify-center"
+          ></i>
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
