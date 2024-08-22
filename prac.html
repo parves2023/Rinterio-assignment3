@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      .bg-paper {
+        background-image: url(../assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -13,13 +24,42 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div class="grid grid-cols-8 gap-4 border border-gray-200">
-  <div class="col-span-5 order-5 o bg-blue-200 border border-gray-200">First element</div>
-  <div class="col-span-3 order-4 bg-green-200 border border-gray-200">Second element</div>
-  <div class="col-span-2 order-3 bg-yellow-200 border border-gray-200">Third element</div>
-  <div class="col-span-4 order-2 bg-purple-200 border border-gray-200">Fourth element</div>
-  <div class="col-span-2 order-1 md:col-span-4 bg-pink-200 border border-gray-200">Fifth element</div>
-</div>
-</div>
+  
+        <!-- Discuss  section -->
+      <section class="bg-paper my-10">
+        <div class="container mx-auto w-[94%] md:w-[90%] py-10">
+          <!-- text part -->
+          <div class="grid place-items-center space-y-4">
+            <button
+              class="btn py-2 px-6 rounded-3xl font-extrabold bg-[#ABEF5F33]"
+            >
+              <i class="fa-solid fa-arrow-right"></i> Let’s Connect
+            </button>
+            <h1 class="font-extrabold text-4xl md:text-5xl">
+              Let’s Discuss Next Project
+            </h1>
+            <p class="md:w-6/12 text-center">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- inputs -->
+          <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-3 py-8">
+            <!-- card 1 -->
+       
+            <input class="md:col-span-1 col-span-1 py-5 px-8 rounded-full" placeholder="First Name*" type="text">
+            <input class="md:col-span-1 col-span-1 py-5 px-8 rounded-full" placeholder="Last Name*" type="text">
+            <input class="md:col-span-1 col-span-1 py-5 px-8 rounded-full" placeholder="Phone Number**" type="number">
+            <input class="md:col-span-1 col-span-1 py-5 px-8 rounded-full" placeholder="Email Number**" type="email">
+          </div>
+
+             
+
+          
+          
+        </div>
+      </section>
 </body>
 </html>
